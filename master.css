@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* color: #00bfff; */
+
+}
+body{
+    background-color: #0b0c10;
+   
+}
+
+/* strat header */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0b0c10;
+    padding: 10px 60px ;
+    width: 100%;
+    z-index: 9999;
+    position: fixed;
+    color: white;
+    text-transform: capitalize;
+    font-family: monospace;
+}
+.center-head{
+    display: flex;
+    align-items: center;
+}
+.center-head i{
+    margin: 0 18px;
+    font-size: 26px ;
+    color: white;
+}
+
+.right-head{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     flex-direction: column;
+     background-color: #333;
+     color: #0b0c10;
+     position: absolute;
+     top: 0;
+     right: 0;
+     height: 100vh ;
+     width: 400px ;
+     padding:  50px 10px ;
+     font-family: monospace;
+     color: white;
+     z-index: 99999;
+      transform: translateX(200%);
+      transition: transform 0.8s ease-in-out; 
+}
+.show{
+    transform: translateX(0);
+    
+}
+.head-right-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 48px ;
+    position: relative;
+    font-size: 30px;
+}
+.head-right-head .logo{
+    color: #00bfff;
+    font-weight: 700;
+}
+.head-right-head .closee{
+    font-size: 30px;
+    cursor: pointer;
+}
+.head-right-head::before{
+    content: "";
+    width: 79%;
+    height: 1px;
+    top: 80px;
+    background-color: white;
+    position: absolute;
+}
+.center-right-head ul li{
+    list-style: none;
+    text-decoration: none;
+}
+.center-right-head ul li a{
+    text-decoration: none;
+    padding: 10px 0 ;
+    color: white;
+    font-size: 23px;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: 0.4s ease ;
+    position: relative;
+}
+ 
+.center-right-head ul li a:hover{
+    color: #00bfff;
+}
+.botton-right-head{
+    padding: 10px 30px ;
+    text-align: center;
+    color: wheat;
+    font-weight: 500;
+    position: relative;
+}
+.botton-right-head i{
+    font-size: 28px;
+    margin: 15px 10px ;
+    color: white;
+}
+.botton-right-head::after{
+    content: "";
+    top:  0px;
+    width: 80%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    left: 35px;
+}
+.p{
+    padding-top: 30px;
+}
+.botton-right-head i:hover{
+
+color: #00bfff;
+}
+/* end header */
+
+/* strat home */
+.container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    
+
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 40px ;
+}
+#element{
+    color: #00bfff;
+}
+ 
+
+.profile-img-container {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #00bfff; /* لون الخلفية الدائرية */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+}
