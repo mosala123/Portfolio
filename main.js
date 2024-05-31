@@ -15,8 +15,67 @@ closee.onclick= function(){
 // typing
 
 var typed = new Typed('#element', {
-    strings: ['Front End Developer',  ],
-    typeSpeed: 100,
+    strings: ['Front End Developer'  ],
+    typeSpeed: 10,
     backSpeed: 70,
-    loop: true,
-  });
+    loop: true
+});
+
+// skills 
+let aboutme = document.querySelector(".aboutme")
+let spans = document.querySelectorAll(".progress span ")
+
+
+window.onscroll = function(){
+    if(window.scrollY >= aboutme.offsetTop-200){
+        console.log("done")
+        spans.forEach( (span)=>{
+            span.style.width= span.dataset.width;
+        }) 
+    }else{
+        
+        spans.forEach( (span)=>{
+            span.style.width=  "0";
+        }) 
+        
+    }
+}
+
+
+
+// my works 
+function filterCards(category) {
+    var cards = document.querySelectorAll('.col-md-3.col-sm-6.mb-4');
+    cards.forEach(function(card) {
+        if (category === 'all') {
+            card.style.display = 'block';
+        } else {
+            if (card.getAttribute('data-category') === category) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        }
+    });
+
+    // تحديث الفئة النشطة
+    var buttons = document.querySelectorAll('.filter-buttons p');
+    buttons.forEach(function(button) {
+        if (button.id === category || (category === 'all' && button.id === 'All')) {
+            button.classList.add('active');
+        } else {
+            button.classList.remove('active');
+        }
+    });
+}
+
+
+
+
+
+
+
+
+
+ 
+ 
